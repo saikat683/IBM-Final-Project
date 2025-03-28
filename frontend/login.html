@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <div class="nav1">
+          <div class="navOne"><h1>CraftForFun</h1></div>
+          <div class="navOne">
+            <a class="navText" href="index.html"><p>Home</p></a>
+          </div>
+          <div class="navOne">
+            <a class="navText" onclick="exploreProjects()"href="#"><p>Explore Projects</p></a>
+          </div>
+          <div class="navOne anchor">
+            <a href="login.html" id="login"
+              ><i class="fa-solid fa-right-to-bracket"></i>
+              <p>Login</p></a
+            >
+          </div>
+          <div class="navOne anchor">
+            <a href="register.html" id="signUp"
+              ><i class="fa-solid fa-user-plus"></i>
+              <p>Sign Up</p></a
+            >
+          </div>
+          <div class="navOne">
+            <a class="navText" href="aboutUs.html"><p>About Us</p></a>
+          </div>
+        </div>
+      </header>
+      <form  id="loginForm">
+        <h1>Fill the Details</h1><br>
+        <input id="email" name="email"type="email"placeholder="Entered your registered email id"required><br><br>
+        <input id="password"name="password"type="password"placeholder="Enter Your password" required><br><br>
+        <button is="login">Login</button>
+    </form>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  
+    
+</body>
+</html>
+<script src="index.js"></script>

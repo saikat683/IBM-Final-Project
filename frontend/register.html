@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header >
+        <div id="registerPage" class="nav1">
+          <div class="navOne"><h1>CraftForFun</h1></div>
+          <div class="navOne">
+            <a class="navText" href="index.html"><p>Home</p></a>
+          </div>
+          <div class="navOne">
+            <a class="navText" href="exploreProjects.html"><p>Explore Projects</p></a>
+          </div>
+          <div class="navOne anchor">
+            <a href="login.html" id="login"
+              ><i class="fa-solid fa-right-to-bracket"></i>
+              <p>Login</p></a
+            >
+          </div>
+          <div class="navOne anchor">
+            <a href="register.html" id="signUp"
+              ><i class="fa-solid fa-user-plus"></i>
+              <p>Sign Up</p></a
+            >
+          </div>
+          <div class="navOne">
+            <a class="navText" href="aboutUs.html"><p>About Us</p></a>
+          </div>
+        </div>
+      </header>
+      <form  id="registerForm">
+        <h1>Fill The SignUp Details</h1><br>
+        <input id="name"type="text"name="name"placeholder="Enter Your Full Name" required><br><br>
+        <input id="email" type="email"name="email"placeholder="Entered Your Email-id" required><br><br>
+        <input id="password"type="password"name="password"placeholder="Enter Your password" required><br><br>
+        <input id="confirmPassword"type="password"name="confirmPassword"placeholder="Re-Enter Your Password" required><br><br>
+        <button id="signup">SignUp</button>
+    </form>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+   
+    
+</body>
+</html>
+<script src="index.js"></script>

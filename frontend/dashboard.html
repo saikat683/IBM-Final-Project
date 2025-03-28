@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DashBoard</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav1">
+        <div class="navOne"><h1>CraftForFun</h1></div>
+        <div class="navOne" id="Search">
+            <input
+              id="search"
+              type="text"
+              onkeyup="searchFunction()"
+              placeholder="search products or projects"
+            />
+          </div>
+        <div class="navOne">
+          <a class="navText" href="#" onclick="redirect()"><p>DashBoard</p></a>
+        </div>
+        <div class="navOne">
+          <a class="navText" href="addProject.html"><p>Add Project</p></a>
+        </div>
+        <div class="navOne">
+          <a class="navText" href="#"><p>My Projects</p></a>
+        </div>
+        <!-- <div class="navOne">
+          <a class="navText" href="#"><p>Community</p></a>
+        </div> -->
+        <div class="navOne">
+          <a class="navText" href="#" onclick="logout()"><p>Logout</p></a>
+        </div>
+      </div>
+    </header>
+    <div id="dashboardContent"></div>
+    <footer>
+      <div class="top">
+        <img src="https://images-platform.99static.com//Lk8Ynns4AZDh3MOiSTs4Wwtlx6A=/174x0:799x625/fit-in/500x500/99designs-contests-attachments/96/96378/attachment_96378051" alt="logo" />
+      </div>
+      <div class="middle">
+        <div class="card">
+          <h3>Product</h3>
+          <p>Features</p>
+          <p>Pricing</p>
+        </div>
+        <div class="card">
+          <h3>Resource</h3>
+          <p>Blog</p>
+          <p>User Guides</p>
+          <p>Webiners</p>
+        </div>
+        <div class="card">
+          <h3>Company</h3>
+          <p>AboutUs</p>
+          <p>Contact Us</p>
+        </div>
+        <div class="card">
+          <h3>Plans & Pricing</h3>
+          <p>Personal</p>
+          <p>Start Up</p>
+          <p>Organization</p>
+        </div>
+      </div>
+      <div class="down">
+        <p>© 2025 All Rights Reserved.</p>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/kalyan.bhunia.52"
+              ><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/1024px-Facebook_f_logo_%282021%29.svg.png" alt="facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://x.com/ImanKalyan5"
+              ><img src="https://sweetwaternow.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2024/01/Depositphotos_676194222_XL-scaled.jpg" alt="twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/_i_am_iman_45/"
+              ><img src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg" alt="instagram"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </body>
+</html>
+<script src="index.js"></script>
+<script src="dashboard.js"></script>

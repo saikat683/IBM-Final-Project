@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Project</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet"href="addProject.css">
+</head>
+<body>
+    <header>
+        <div class="nav1">
+           <div class="navOne"><h1>CraftForFun</h1></div>
+           <div class="navOne"><a class="navText" href="#"onclick="redirect()"><p>DashBoard</p></a></div>
+           <div class="navOne"><a class="navText" href=""><p>Add Project</p></a></div>
+           <!-- <div class="navOne"id="search"><input type="text"placeholder="search products or projects"></div> -->
+           <div class="navOne" ><a class="navText" href=""><p>My Projects</p></a></div>
+           <div class="navOne" ><a class="navText" href=""><p>Community</p></a></div>
+           <div class="navOne" ><a class="navText" href="#"onclick="logout()"><p>Logout</p></a></div>
+        </div>
+    </header>
+    <form id="addProjectForm">
+        <h1>Fill The Details  For Adding Your Project</h1><br>
+        <input id="name"type="text" name="name"placeholder="Enter The Project Name"required><br>
+        <input id="image" name="image"type="url"placeholder="Enter The Project Image URL"required><br>
+        <textarea id="description"type="text"name="description"placeholder="Enter the description of your project"required></textarea><br>
+        <textarea id="steps"type="text"name="steps"placeholder="Provide Steps For Creating The Project"required></textarea><br>
+        <textarea id="materials"type="text"name="materials"placeholder="Mention Materials required for the project"required></textarea><br>
+        <input id="time"type="text" name="time"placeholder="Time required"required><br>
+        <select id="category"name="category"required>
+            <option value="select">Select Category</option>
+            <option value="Crfats">Crafts</option>
+            <option value="Home Decor">Home Decor</option>
+            <option value="WoodWorking">WoodWorking</option>
+            <option value="Gardening">Gardening</option>
+            <option value="Recycling">Recycling</option>
+            <option value="Fashion">Fashion</option>
+            <option value="Organization">Organization</option>
+        </select><br>
+        <select name="difficultyLevel"id="difficultyLevel"required>
+            <option value="Select">Select Difficulty Level</option>
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+        </select><br><br>
+        <button id="addProject">Add Project</button>
+    </form>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>
+<script src="index.js"></script>
+<script src="addProject.js"></script>

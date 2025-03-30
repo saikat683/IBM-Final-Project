@@ -1,6 +1,6 @@
 // let contentBox = document.getElementById("dashboardContent");
 const getDataBase = async () => {
-  const res = await fetch("http://localhost:3000/all/api/auth/crafts", {
+  const res = await fetch("https://ibm-final-project.onrender.com/all/api/auth/crafts", {
     method: "GET",
     headers: { "Content-Type": "application/json" },
   });
@@ -50,7 +50,7 @@ function showData(data2) {
 
 //implementing the search function
 async function getData() {
-  const res = await fetch("http://localhost:3000/all/api/auth/crafts", {
+  const res = await fetch("https://ibm-final-project.onrender.com/all/api/auth/crafts", {
     method: "GET",
     headers: { "Content-Type": "application/json" },
   });
@@ -90,7 +90,7 @@ async function increaseLike(el,index){
   // console.log(index);
   const id=el._id;
   console.log(id)
-  const res = await fetch(`http://localhost:3000/all/api/auth/crafts/${id}`, {
+  const res = await fetch(`https://ibm-final-project.onrender.com/all/api/auth/crafts/${id}`, {
     method: "PATCH",
     headers: { "Content-Type": "application/json" },
   });

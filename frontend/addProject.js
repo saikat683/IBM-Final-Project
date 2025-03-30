@@ -12,7 +12,7 @@ document
     const category = document.getElementById("category").value;
     const difficultyLevel = document.getElementById("difficultyLevel").value;
 
-    const res = await fetch("http://localhost:3000/all/api/auth/new", {
+    const res = await fetch("https://ibm-final-project.onrender.com/all/api/auth/new", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

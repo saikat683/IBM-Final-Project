@@ -2,7 +2,7 @@
 
 let content=document.getElementById("expolrePageContent");
 const getData=async()=>{
-  const res = await fetch("http://localhost:3000/all/api/auth/explore", {
+  const res = await fetch("https://ibm-final-project.onrender.com/all/api/auth/explore", {
     method: "GET",
     headers: { "Content-Type": "application/json" },
   });

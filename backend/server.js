@@ -14,7 +14,7 @@ app.use(cors());
 app.use('/api/auth', userRouter);
 app.use("/all/api/auth",projectRouter);
 
-app.use("/",(req,res)=>{
+app.get("/",(req,res)=>{
     console.log("root route is hit");
     res.status(200).json("Welcome to the backend of E-Commerce Website");
 });

@@ -41,8 +41,9 @@ header{
     font-weight: 600;
 }
 body{
-    background-color: bisque;
-    background-image: url("https://t3.ftcdn.net/jpg/08/68/51/04/240_F_868510427_vsvN67LV1zSmLMyXMOFG05tRCmTAj1xL.jpg");
+    /* background-color: bisque; */
+    background-image:linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    /* background-image: url("https://t3.ftcdn.net/jpg/08/68/51/04/240_F_868510427_vsvN67LV1zSmLMyXMOFG05tRCmTAj1xL.jpg"); */
     background-size: cover;
 }
 form{
@@ -57,6 +58,7 @@ form{
     color:white;
     border-radius: 10px;
     box-shadow: rgba(255,255,255,0.9)0px 0px 50px 0px;
+    background-image: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
 }
 form input{
     width:70%;
@@ -74,8 +76,9 @@ form>button{
     border-radius: 10px;
     border:none;
     cursor:pointer;
-    background-color: rgb(194, 244, 94);
-    /* color:white; */
+    /* background-color: rgb(194, 244, 94); */
+    color:white;
+    background-color: #1E90FF;
     font-weight: 600;
 
 }
